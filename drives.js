@@ -17,9 +17,15 @@ up.addEventListener('click', function() {
       top: 0,
     });
   });
-const modulesButton = document.getElementById('modulesButton');
-const modules = document.getElementById('modules');
-modulesButton.addEventListener('click', function () {
-    modules.classList.toggle('modulesActive');
-    modulesButton.classList.toggle('modulesDivActive')
-})
+  const modulesButton = document.getElementById('modulesButton');
+  const modules = document.getElementById('modules');
+  modulesButton.addEventListener('click', function () {
+      modules.classList.toggle('modulesActive');
+      modulesButton.classList.toggle('modulesDivActive')
+  })
+  const studentButton = document.getElementById('studentDiv');
+  const student = document.getElementById('student');
+  studentButton.addEventListener('click', function(){
+      student.classList.toggle('studentActive');
+      navLinks.classList.toggle('active2');
+  })
