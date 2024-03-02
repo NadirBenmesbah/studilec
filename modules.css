@@ -1,0 +1,477 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+.top {
+    background-color: #c2b087;
+    height: 60px;
+    width: 60px;
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    z-index: 20;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    border: solid 5px white;
+    border-radius: 100%;
+    cursor: pointer;
+    font-size: larger;
+    display: none;
+}
+
+.activeScroll {
+    display: flex;
+    transition: 1s;
+}
+
+/* ------------------------header------------------------------------------- */
+
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style-type: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(25, 25, 25); 
+    box-shadow: rgba(149, 157, 165, 0.01) 0px 15px 10px -15px;
+    position: relative;
+    width: 100%;
+    z-index: 100;
+
+}
+
+header nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 80%;
+
+}
+header nav ul li {
+    width: 15%;
+    text-align: center;
+}
+
+nav img {
+    width: 120px;
+}
+
+header nav ul a,
+.modulesDiv {
+    font-weight: 700;
+    color: white;
+    font-size: 18px;
+}
+
+nav ul .principal a {
+    color: #c2b087;
+}
+
+
+nav ul .principal:hover a {
+    color: #c2b087;
+}
+
+.modulesDiv{
+    color: white;
+}
+
+nav {
+    display: none;
+}
+
+.logoName {
+    display: block;
+}
+
+.logoName h1 {
+    color: white;
+}
+
+.logoContainer {
+    display: block;
+}
+
+.logoContainer img {
+    width: 100px;
+}
+
+header .menuButton {
+    display: block;
+}
+
+header .menuButton img {
+    width: 50px;
+}
+
+header .phoneNav {
+    background-color: #000000bc;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 0px;
+    overflow: hidden;
+    transition-duration: 500ms;
+}
+
+header .phoneNav a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: white;
+    font-weight: bold;
+}
+
+header .phoneNav li {
+    padding: 20px 0;
+    width: 100%;
+    text-align: center;
+}
+
+header .phoneNav .hover:hover {
+    background-color: #ffffff29;
+    transition: 100ms;
+}
+header .phoneNav .hover:hover a{
+    color: white;
+}
+
+header .active {
+    height: 380px;
+}
+
+
+header .menuButton {
+    cursor: pointer;
+}
+
+.modulesDiv {
+    position: relative;
+    text-align: center;
+    cursor: pointer;
+    transition: 100ms;
+}
+
+
+.modulesDiv:hover {
+    color: #c2b087;
+
+}
+
+.modules {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: absolute;
+    top: 100%;
+    left:5%;
+    z-index: 99;
+    display: none;
+    overflow: hidden;
+    transition: 500ms;
+    padding: 0;
+    background-color: rgb(25, 25, 25);
+
+}
+
+.modules li {
+    padding: 5px 0;
+    width: 100%;
+    text-align: center;
+}
+
+.modules li:hover {
+    display: block;
+}
+
+.modulesDiv{
+    padding: 0;
+}
+
+.modules li:hover a {
+    color: #c2b087;
+}
+
+.modulesDiv:hover .modules {
+    color: #c2b087;
+    display: block;
+}
+header .phoneNav li.studentDiv{
+    padding: 0;
+}
+.studentDiv button{
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    width: 100%;
+    background-color: inherit;
+    border: none;
+    padding: 20px 0;
+    cursor: pointer;
+}
+.studentDiv button:hover{
+    color: white;
+}
+.studentDiv:hover {
+    cursor: pointer;
+}
+
+.student{
+    display: none;
+
+}
+.student a{
+    text-align: start;
+
+}
+.studentActive {
+    display: block;
+}
+header .phoneNav .studentDiv{
+    cursor: pointer;
+}
+header .active2{
+    height: 580px;
+}
+/* ------------------------haeder------------------------------------------- */
+/* ------------------------main------------------------------------------- */
+section.drive{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+section.drive h1{
+    margin-top: 1em;
+    text-transform: uppercase;
+}
+section.drive hr{
+    width: 30%;
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #f33c3c;
+    margin: 1em 0;
+    padding: 0;
+}
+
+
+section.drive a{
+    display: block;
+    background: #c2b087;
+   
+    color: white;
+    width: 40%;
+    margin: 1em 0;
+    padding: 1.5em 0;
+    font-weight: 700;
+    text-align: center;
+    border-radius: 20px;
+}
+
+section.drive a:hover{
+    cursor: pointer;
+    background-color: #c2b087a9;
+    transition: 500ms;
+}
+
+
+
+
+
+
+
+
+/* ------------------------main------------------------------------------- */
+
+/* ------------------------footer------------------------------------------- */
+
+footer {
+    padding: 50px;
+    background-color: rgba(128, 128, 128, 0.192);
+    margin-top: 50px;
+}
+
+footer .part{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+footer .description{
+    width: 80%;
+}
+
+footer .footer-links {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    align-items: start;
+    gap: 1em;
+    margin: 50px 0px;
+}
+
+footer .footer-links ul {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+
+footer .footer-links .socialMedia {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+
+
+
+.email {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+footer form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.email input {
+    background: white;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 10px;
+    outline: 0;
+    border: 0;
+}
+
+.email input:focus {
+    border: solid 1px;
+}
+
+.email button {
+    background-color: #c2b087;
+    border: none;
+    padding: 5px 10px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    width: 50%;
+}
+
+.email button:hover {
+    background-color: #c2b087dc;
+}
+
+.contact li {
+    cursor: default;
+}
+
+.hover a {
+    cursor: pointer;
+    color: black;
+}
+
+.hover:hover a {
+    color: #c2b087;
+    transition: 250ms;
+}
+
+.hover:hover {
+    color: #c2b087;
+    transition: 250ms;
+}
+
+footer .footer-message {
+    padding-top: 15px;
+    border-top: 2px solid;
+    border-color: #c2b087;
+    text-align: center;
+    font-weight: 400;
+}
+
+footer .footer-message .important {
+    color: #c2b087;
+    cursor: default;
+}
+
+footer h2 {
+    margin: 0;
+}
+
+/* ------------------------footer------------------------------------------- */
+@media (min-width: 1035px) {
+    footer form {
+        flex-direction: row;
+    }
+
+}
+
+
+@media (min-width: 767px) {
+
+    /* ------------------------haeder------------------------------------------- */
+    header {
+        justify-content: center;
+    }
+
+    nav {
+        display: block flex;
+        width: 100%;
+        justify-content: center;
+    }
+
+    header .phoneNav {
+        display: none;
+    }
+
+    .logoContainer {
+        display: none;
+    }
+
+    header .menuButton {
+        display: none;
+    }
+
+    .logoName {
+        display: none;
+    }
+
+    header nav ul li a:hover {
+        color: #c2b087;
+        transition: 100ms;
+    }
+
+    /* ------------------------haeder------------------------------------------- */
+    /* ------------------------main------------------------------------------- */
+
+
+
+}
