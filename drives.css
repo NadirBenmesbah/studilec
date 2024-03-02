@@ -3,14 +3,10 @@
     padding: 0;
     font-family: "Poppins", sans-serif;
 }
-/* body{
-    background-color: rgb(25, 25, 25);
-} */
 
 .top {
     background-color: #c2b087;
     height: 60px;
-
     width: 60px;
     position: absolute;
     bottom: 30px;
@@ -431,6 +427,13 @@ footer h2 {
 }
 
 /* ------------------------footer------------------------------------------- */
+@media (min-width: 1035px) {
+    footer form {
+        flex-direction: row;
+    }
+
+}
+
 
 @media (min-width: 767px) {
 
@@ -468,9 +471,6 @@ footer h2 {
 
     /* ------------------------haeder------------------------------------------- */
     /* ------------------------main------------------------------------------- */
-    footer form {
-        flex-direction: row;
-    }
 
 
 

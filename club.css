@@ -7,7 +7,6 @@
 .top {
     background-color: #c2b087;
     height: 60px;
-
     width: 60px;
     position: absolute;
     bottom: 30px;
@@ -33,6 +32,7 @@
 
 /* ------------------------header------------------------------------------- */
 
+
 a {
     text-decoration: none;
     color: inherit;
@@ -46,11 +46,12 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: rgb(25, 25, 25);
     box-shadow: rgba(149, 157, 165, 0.01) 0px 15px 10px -15px;
     position: relative;
     width: 100%;
     z-index: 100;
-    position: absolute;
+    margin-bottom: 24px;
 
 }
 
@@ -59,7 +60,9 @@ header nav ul {
     justify-content: space-evenly;
     align-items: center;
     width: 80%;
+
 }
+
 header nav ul li {
     width: 15%;
     text-align: center;
@@ -80,7 +83,12 @@ nav ul .principal a {
     color: #c2b087;
 }
 
+
 nav ul .principal:hover a {
+    color: #c2b087;
+}
+
+.modulesDiv {
     color: #c2b087;
 }
 
@@ -146,7 +154,8 @@ header .phoneNav .hover:hover {
     background-color: #ffffff29;
     transition: 100ms;
 }
-header .phoneNav .hover:hover a{
+
+header .phoneNav .hover:hover a {
     color: white;
 }
 
@@ -180,12 +189,13 @@ header .menuButton {
     text-align: center;
     position: absolute;
     top: 100%;
-    left:5%;
+    left: 5%;
     z-index: 99;
     display: none;
     overflow: hidden;
     transition: 500ms;
     padding: 0;
+    background-color: rgb(25, 25, 25);
 
 }
 
@@ -199,7 +209,7 @@ header .menuButton {
     display: block;
 }
 
-.modulesDiv{
+.modulesDiv {
     padding: 0;
 }
 
@@ -211,10 +221,12 @@ header .menuButton {
     color: #c2b087;
     display: block;
 }
-header .phoneNav li.studentDiv{
+
+header .phoneNav li.studentDiv {
     padding: 0;
 }
-.studentDiv button{
+
+.studentDiv button {
     color: white;
     font-size: 16px;
     font-weight: 700;
@@ -224,123 +236,213 @@ header .phoneNav li.studentDiv{
     padding: 20px 0;
     cursor: pointer;
 }
-.studentDiv button:hover{
+
+.studentDiv button:hover {
     color: white;
 }
+
 .studentDiv:hover {
     cursor: pointer;
 }
 
-.student{
+.student {
     display: none;
 
 }
-.student a{
+
+.student a {
     text-align: start;
 
 }
+
 .studentActive {
     display: block;
 }
-header .phoneNav .studentDiv{
+
+header .phoneNav .studentDiv {
     cursor: pointer;
 }
-header .active2{
+
+header .active2 {
     height: 580px;
 }
+
 /* ------------------------haeder------------------------------------------- */
 /* ------------------------main------------------------------------------- */
-div.univ {
-    background-image:
-        linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.3)),
-        url(cover.png);
-    padding: 100px;
-    height: 100vh;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: start left;
-    position: relative;
-    position: relative;
-
+section.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-div.univContent {
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: rgba(0, 0, 0, 0.01);
-    margin: 250px 0;
-    width: 70%;
+section.main hr {
+    width: 30%;
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #f33c3c;
+    margin: 1em 0;
+    padding: 0;
+}
+
+section.parent {
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    margin-bottom: 50px;
+}
+
+section.main .parent .description {
+    padding: 50px 1em;
+    background-color: rgba(211, 211, 211, 0.318);
+    overflow-y: scroll;
+}
+
+section.main .parent .description p {
+    line-height: 30px;
+}
+
+section.parent .title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1em;
+}
+
+section.parent .title img {
+    width: 50px;
+}
+
+section.main .parent .isc {
+    background-image: url(isc_img.jfif);
+}
+
+section.main .parent .isc:hover {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.3)), url(isc_img.jfif);
+}
+
+section.main .parent .isc ul {
+    display: none;
+}
+
+section.main .parent .isc:hover ul {
+    display: block;
+}
+section.main .parent .wameedh:hover {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.3)), url(wameedh_image.jpg);
+}
+
+section.main .parent .wameedh ul {
+    display: none;
+}
+
+section.main .parent .wameedh:hover ul {
+    display: block;
+}
+section.main .parent .ieee:hover {
+    background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.5)), url(IEEE_image.jpeg);
+}
+
+section.main .parent .ieee ul {
+    display: none;
+}
+
+section.main .parent .ieee:hover ul {
+    display: block;
+}
+
+section.main .parent .image {
+    padding: 0 50px;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: start center;
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+section.main .parent .right {
+align-items: end;
+}
+section.main .parent .left {
     align-items: start;
-    gap: 20px;
+    }
 
+section.main .parent .image li {
+    color: #d3d3d3;
+    display: flex;
+    gap: 1em;
+    margin: 20px 0;
+    text-align: center;
+}
+section.main .parent .right li {
+    justify-content: end;
+}
+section.main .parent .left li {
+    justify-content: start;
 }
 
 
-div.univContent h1 {
-    color: white;
-    font-size: 30pt;
-}
-
-div.univContent h1 span {
-    text-transform: uppercase;
-}
-
-
-div.univContent p {
-    color: white;
-    background-color: rgba(0, 0, 0, 0.01);
-    font-size: 15pt;
-    font-weight: 700;
-}
-
-div.univContent button {
-    border: none;
-    color: white;
-    padding: 15px 35px;
-    font-size: 18px;
-    cursor: pointer;
-    margin: 0;
-    border: solid #c2b087;
+section.main .parent .image li .link {
+    width: 86px;
     font-weight: bold;
-    text-transform: uppercase;
+    display: none;
 }
 
-div.univContent .button .enroll {
-    background-color: #c2b087;
+section.main .parent .image .aboutDiv:hover .about {
+    display: block;
 }
 
-div.univContent .button .learn {
-    background: rgba(0, 0, 0, 0.158);
-    color: #c2b087;
+section.main .parent .image .workshopDiv:hover .workshop {
+    display: block;
+}
+
+section.main .parent .image .eventDiv:hover .event {
+    display: block;
 }
 
 
-div.univContent .button .learn:hover {
-    background-color: #c2b087;
-    color: white;
+section.main .parent .wameedh {
+    background-image: url(wameedh_image.jpg);
+    background-position: center center;
 }
+
+section.main .parent .ieee {
+    background-image: url(IEEE_image.jpeg);
+    background-position: start center;
+}
+
+section.parent .title .ieee_logo {
+    border-radius: 50%;
+    margin-right: 0.5em;
+}
+
+.phone_img {
+    width: 100%;
+    overflow: hidden;
+}
+
+
+
+
+
+
 
 
 /* ------------------------main------------------------------------------- */
-/* ------------------------footer------------------------------------------- */
 
+/* ------------------------footer------------------------------------------- */
 
 footer {
     padding: 50px;
     background-color: rgba(128, 128, 128, 0.192);
+    margin-top: 50px;
 }
 
-footer .part{
+footer .part {
     display: flex;
     flex-direction: column;
     gap: 1em;
 }
-footer .description{
+
+footer .description {
     width: 80%;
 }
 
@@ -449,6 +551,17 @@ footer h2 {
 }
 
 /* ------------------------footer------------------------------------------- */
+
+
+
+
+
+
+
+
+
+
+
 @media (min-width: 1035px) {
     footer form {
         flex-direction: row;
@@ -457,12 +570,13 @@ footer h2 {
 }
 
 
+
+
 @media (min-width: 767px) {
 
     /* ------------------------haeder------------------------------------------- */
     header {
         justify-content: center;
-        background: none;
     }
 
     nav {
@@ -494,12 +608,18 @@ footer h2 {
 
     /* ------------------------haeder------------------------------------------- */
     /* ------------------------main------------------------------------------- */
-    .cards {
-        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-        padding: 100px;
+
+    section.parent {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
+        grid-template-rows: 600px;
+
+
     }
 
-    /* ------------------------main------------------------------------------- */
+    .phone_img {
+        display: none;
+    }
 
 
 }
