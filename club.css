@@ -365,9 +365,7 @@ section.main .parent .isc {
 
 }
 
-section.main .parent .intellect {
-    background-image: url(intellect_image.jfif);
-}
+
 
 section.main .parent .isc:hover {
     background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.3)), url(isc_img.jfif);
@@ -444,7 +442,10 @@ section.main .parent .image {
     flex-direction: column;
     justify-content: center;
 }
-
+section.main .parent .intellect {
+    background-image: url(intellect_image.jfif);
+    background-position: center center;
+}
 section.main .parent .right {
     align-items: end;
 }
